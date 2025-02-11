@@ -1,26 +1,27 @@
-import React from "react";
+"use client";
+
+import NewItem from "./NewItem";
 import Link from "next/link";
-import ItemList from "./item-list";
 
 /**
  * Page Component
  *
- * Renders the Week 3 Assignments page, which includes:
- * - A title
- * - A shopping list (ItemList component)
+ * Renders the Week 4 Assignments page, which includes:
+ * - A page header
+ * - A form for adding new shopping list items (NewItem component)
  * - A navigation link back to the homepage
  */
 export default function Page() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-8 bg-[#FFF7F1]">
-      {/* Page Title Section */}
+      {/* Page Header Section */}
       <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">
         Shopping List
       </h1>
 
-      {/* Content Section: Shopping List and Navigation */}
+      {/* Content Section: New Item Form and Navigation */}
       <div className="grid grid-cols-1 gap-4 max-w-lg">
-        <ItemList />
+        <NewItem />
 
         {/* Navigation Section */}
         <Link
