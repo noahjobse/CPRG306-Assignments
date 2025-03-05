@@ -13,20 +13,20 @@ import Link from "next/link";
  */
 export default function Page() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 bg-[#FFF7F1]">
+    <div className="flex flex-col items-center justify-center min-h-screen p-8 bg-gradient-to-b from-white to-gray-100">
       {/* Page Header Section */}
-      <h1 className="text-4xl font-bold text-gray-800 mb-8 text-center">
+      <h1 className="text-4xl font-serif tracking-wide text-gray-900 mb-8 text-center">
         Shopping List
       </h1>
 
       {/* Content Section: New Item Form and Navigation */}
-      <div className="grid grid-cols-1 gap-4 max-w-lg">
+      <div className="grid grid-cols-1 gap-6 max-w-3xl">
         <NewItem />
 
         {/* Navigation Section */}
         <Link
           href="/"
-          className="col-span-1 flex items-center justify-center p-6 rounded-2xl shadow-lg bg-[#A8E6CF] text-gray-800 text-xl font-semibold hover:scale-105 transition-transform duration-300"
+          className="col-span-1 flex items-center justify-center p-6 rounded-lg shadow-md bg-white border border-gray-300 text-gray-800 text-xl font-medium hover:translate-y-[-2px] transition-transform duration-300"
         >
           Back to Home
         </Link>
