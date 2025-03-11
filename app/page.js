@@ -45,6 +45,13 @@ export default function Home() {
         >
           Week 6 Assignment
         </Link>
+
+        <Link
+          href="/week-7"
+          className="col-span-2 flex items-center justify-center p-8 rounded-lg shadow-md bg-white border border-gray-300 text-gray-800 text-xl font-medium hover:translate-y-[-2px] transition-transform duration-300"
+        >
+          Week 7 Assignment
+        </Link>
       </div>
     </div>
   );
