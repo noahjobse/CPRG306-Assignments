@@ -1,17 +1,4 @@
 import React from "react";
-
-/**
- * Represents an item with a name, quantity, and category.
- * This class can be used for structured data handling if needed in the future.
- */
-class Item {
-  constructor(name, quantity, category) {
-    this.name = name;
-    this.quantity = quantity;
-    this.category = category;
-  }
-}
-
 /**
  * ItemComponent
  *

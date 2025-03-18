@@ -51,6 +51,12 @@ const NewItem = () => {
     setQuantity(Math.min(MAX_QUANTITY, Math.max(1, value)));
   };
 
+  const setFormData = (data) => {
+    setItemName(data.name || "");
+    setQuantity(data.quantity || 1);
+    setCategory(data.category || "produce");
+  }
+
   /**
    * Validates the item name and handles form submission.
    */
@@ -84,6 +90,7 @@ const NewItem = () => {
     if (!/[a-zA-Z]/.test(trimmedName)) {
       setError("Item name must include at least one letter.");
       return;
+      
     }
 
     setError("");
@@ -91,6 +98,7 @@ const NewItem = () => {
     alert(
       `Item added: ${trimmedName}, Quantity: ${quantity}, Category: ${category}`
     );
+    setFormData({ name: '', quantity: 1, category: 'produce' });
   };
 
   return (
