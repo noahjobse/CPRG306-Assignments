@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { ItemComponent } from "./item";
 
-export default function ItemList({ items }) {
+export default function ItemList({ items, onItemSelect }) {
   const [sortBy, setSortBy] = useState("name");
 
   function handleClick(sortType) {
@@ -46,6 +46,7 @@ export default function ItemList({ items }) {
             name={item.name}
             quantity={item.quantity}
             category={item.category}
+            onSelect={onItemSelect} // ✅ Pass the function down
           />
         ))}
       </ul>
