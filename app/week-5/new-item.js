@@ -98,7 +98,7 @@ const NewItem = () => {
     alert(
       `Item added: ${trimmedName}, Quantity: ${quantity}, Category: ${category}`
     );
-    setFormData({ name: '', quantity: 1, category: 'produce' });
+    setFormData({});
   };
 
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import NewItem from "./NewItem";
+import NewItem from "./new-item";
 import Link from "next/link";
 
 /**
