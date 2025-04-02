@@ -66,6 +66,13 @@ export default function Home() {
         >
           Week 9 Assignment
         </Link>
+
+        <Link
+          href="/week-10"
+          className="col-span-2 flex items-center justify-center p-8 rounded-lg shadow-md bg-white border border-gray-300 text-gray-800 text-xl font-medium hover:translate-y-[-2px] transition-transform duration-300"
+        >
+          Week 10 Assignment
+        </Link>
       </div>
     </div>
   );
